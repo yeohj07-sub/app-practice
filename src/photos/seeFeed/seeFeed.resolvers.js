@@ -7,8 +7,8 @@ export default {
       client.photo.findMany({
         take: 2,
         skip: offset,
+        /*
         where: {
-          /*
           OR: [
             {
               user: {
@@ -23,8 +23,8 @@ export default {
               userId: loggedInUser.id,
             },
           ],
-          */
         },
+        */
         orderBy: {
           createdAt: "desc",
         },
