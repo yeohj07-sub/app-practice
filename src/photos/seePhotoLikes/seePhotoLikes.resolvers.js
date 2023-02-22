@@ -8,11 +8,7 @@ export default {
           photoId: id,
         },
         select: {
-          user: {
-            select: {
-              username: true,
-            },
-          },
+          user: true,
         },
       });
       return likes.map((like) => like.user);
